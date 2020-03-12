@@ -2,11 +2,6 @@
 > Summary description here.
 
 
-```python
-%load_ext autoreload
-%autoreload 2
-```
-
 This file will become your README and also the index of your documentation.
 
 ## Install
@@ -30,16 +25,16 @@ say_hello('Sylvain')
 
 ```python
 s = HelloSayer('Sylvain')
+s.say()
 ```
 
 
-    ---------------------------------------------------------------------------
 
-    NameError                                 Traceback (most recent call last)
 
-    <ipython-input-11-2ec636bacfcd> in <module>
-    ----> 1 s = HelloSayer('Sylvain')
-    
+    'Hello Sylvain!'
 
-    NameError: name 'HelloSayer' is not defined
 
+
+```python
+test_eq(s.say(), "Hello Sylvain!")
+```
